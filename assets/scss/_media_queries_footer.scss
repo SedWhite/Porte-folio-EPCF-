@@ -1,0 +1,24 @@
+
+@media screen and (max-width: 863px)  {
+    footer {
+        @include flex(flex-start, column, center);
+        width: 100%;
+        padding-top: 10em;
+    
+        
+        ul {
+            display: flex;
+            align-self: center;
+            flex-direction: row;
+            padding: 0;
+    
+            li {
+                padding: 10px;
+                
+                #footRightSide {
+                    color:white;
+                }
+            }
+        }
+    }
+}

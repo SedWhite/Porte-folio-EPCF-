@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "poiret";
+  src: url(../fonts/PoiretOne-Regular.ttf);
+}
+@font-face {
+  font-family: "overpass";
+  src: url(../fonts/Overpass-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "numans";
+  src: url(../fonts/Numans-Regular.ttf);
+}
+* {
+  color: white;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: overpass;
+}
+
+body {
+  background-image: url(/assets/img/sathish-kumar-graphic-composition-01.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#navBar ul {
+  display: flex;
+  flex-direction: row;
+}
+#navBar ul li {
+  padding: 10px;
+}
+
+main {
+  color: white;
+  width: 100%;
+  height: 829px;
+  absolute: relative;
+}
+main .btn-nav:first-of-type {
+  background-color: rgba(22, 22, 22, 0.787);
+  margin: 0;
+  border-radius: 0px 5px 5px 0px;
+}
+main .btn-nav:first-of-type i {
+  margin: 10px;
+}
+main .btn-nav:last-of-type {
+  background-color: rgba(22, 22, 22, 0.787);
+  margin: 0;
+  border-radius: 5px 0px 0px 5px;
+}
+main .btn-nav:last-of-type i {
+  margin: 10px;
+}
+main .slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+main .slider #Accueil {
+  width: 60em;
+  margin-left: 2em;
+}
+main .slider #Accueil h1 {
+  font-size: xx-large;
+}
+main .slider #Accueil p:first-of-type {
+  margin-top: 3em;
+}
+main .slider #Accueil p:last-of-type {
+  margin-bottom: 3em;
+}
+main .slider #Accueil a {
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 40px;
+  border: solid #161616 2px;
+  background-color: #161616;
+  transition: all 0.4s ease-in-out;
+}
+main .slider #Accueil a:hover {
+  color: black;
+  background-color: white;
+}
+main .slider #aPropos {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+main .slider #aPropos img {
+  border-radius: 50%;
+  width: 10em;
+  margin-bottom: 1em;
+}
+main .slider #aPropos h2 {
+  margin-bottom: 0.5em;
+  font-size: larger;
+}
+main .slider #aPropos .contact {
+  margin-top: 3.5em;
+}
+main .slider #aPropos .contact .titreContact {
+  font-size: x-large;
+}
+main .slider #aPropos .contact #telEtMail > p:last-of-type {
+  margin-bottom: 3em;
+}
+main .slider #aPropos .contact h3 {
+  margin-bottom: 0.5em;
+}
+main .slider #aPropos .contact a {
+  margin: 1em;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.slider section {
+  max-width: 100%;
+  height: 100%;
+  display: none;
+}
+
+section.active {
+  display: block;
+  animation: fade 0.8s;
+  height: 100%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.btn-nav {
+  font-size: 50px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  bottom: 0px;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+}
+footer ul li {
+  padding: 10px;
+}
+footer ul li #footRightSide {
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    color: white;
+    width: 100%;
+    height: 829px;
+  }
+  main .btn-nav:first-of-type {
+    background-color: rgba(22, 22, 22, 0.787);
+    margin: 0;
+    border-radius: 0px 5px 5px 0px;
+  }
+  main .btn-nav:first-of-type i {
+    margin: 10px;
+  }
+  main .btn-nav:last-of-type {
+    background-color: rgba(22, 22, 22, 0.787);
+    margin: 0;
+    border-radius: 5px 0px 0px 5px;
+  }
+  main .btn-nav:last-of-type i {
+    margin: 10px;
+  }
+  main .slider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  main .slider #Accueil {
+    width: 100%;
+    margin-left: 2em;
+  }
+  main .slider #Accueil h1 {
+    font-size: xx-large;
+  }
+  main .slider #Accueil p:first-of-type {
+    margin-top: 3em;
+  }
+  main .slider #Accueil p:last-of-type {
+    margin-bottom: 3em;
+  }
+  main .slider #Accueil a {
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 10px 40px;
+    background-color: #161616;
+  }
+  main .slider #aPropos {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 10em;
+  }
+  main .slider #aPropos img {
+    border-radius: 50%;
+    width: 10em;
+    margin-bottom: 1em;
+  }
+  main .slider #aPropos h2 {
+    margin-bottom: 0.5em;
+    font-size: larger;
+  }
+  main .slider #aPropos p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  main .slider #aPropos .contact {
+    margin-top: 2em;
+  }
+  main .slider #aPropos .contact .titreContact {
+    font-size: x-large;
+  }
+  main .slider #aPropos .contact #telEtMail > p:last-of-type {
+    margin-bottom: 1.5em;
+  }
+  main .slider #aPropos .contact h3 {
+    margin-bottom: 0.5em;
+  }
+  main .slider #aPropos .contact a {
+    margin: 1em;
+  }
+}
+@media screen and (max-width: 863px) {
+  footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10em;
+  }
+  footer ul {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    padding: 0;
+  }
+  footer ul li {
+    padding: 10px;
+  }
+  footer ul li #footRightSide {
+    color: white;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

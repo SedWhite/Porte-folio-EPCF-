@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    height: 100%;
+    @include flex($align: center, $dir: row);
+  }
+  .slider section {
+    max-width: 100%;
+    height: 100%;
+    display: none;
+  }
+  section.active {
+    display: block;
+    animation: fade 0.8s;
+    height: 100%;
+
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+.btn-nav {
+    font-size: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+}
